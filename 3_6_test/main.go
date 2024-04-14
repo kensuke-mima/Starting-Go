@@ -24,6 +24,22 @@ func main() {
 	fmt.Println(i)
 
 	fmt.Println("func one", one())
+
+	//3.7
+	//型変換キャスト
+	n1 := int(1)
+	b := byte(n)
+	i64 := int64(n)
+	fmt.Println("KATAHENKAN", n1, b, i64)
+
+	//rune型（シングルクォート）
+	r := '松'
+	fmt.Printf("%v\n", r) //=>26494
+
+	//3.8 配列型
+	a := [5]int{1, 2, 3, 4, 5}
+	fmt.Printf("3.8 HAIRETSU %v", a) //=>[1,2,3,4,5]
+
 }
 
 func one() int {
